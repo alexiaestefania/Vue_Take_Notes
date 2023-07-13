@@ -1,0 +1,71 @@
+// Import Google Font
+
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+//Import icons
+@import "../../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+
+// Update Bulma's global variables
+$family-sans-serif: "Roboto", sans-serif;
+$family-primary: 'Oleo Script', cursive;
+$primary: #f13483;
+$link: #ff6ca9;
+
+:root {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.card-container {
+    overflow-y: auto;
+    max-height: 95vh;
+}
+
+@import "../../../node_modules/bulma/bulma.sass";
+
+.card {
+    width: 250px;
+    margin: 25px;
+    border-radius: 25px;
+  }
+  .card-content {
+    height: 200px;
+    word-wrap: break-word;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 270px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 105%; 
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 12%;
+    left: 100%; /* To the right of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent $white-bis;
+  }
